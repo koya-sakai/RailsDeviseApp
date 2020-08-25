@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :board_messages
   resources :board_users
   resources :data_pages
+  root 'hello#index'
   get 'hello/index'
   get 'hello/login_check'
   devise_for :accounts
